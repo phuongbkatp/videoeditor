@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#b588f7</color>
+    <color name="colorPrimaryDark">#A46AFA</color>
+    <color name="colorAccent">#A46AFA</color>
+    <color name="orangepm">#A46AFA</color>
+
+    <color name="black">#ff000000</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="borderColor">#b0b4b9</color>
+    <color name="color_white_color">#ffffffff</color>
+    <color name="seekbargray">#ff838383</color>
+    <color name="trans">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="waveform_unselected">#535353</color>
+    <color name="waveform_unselected_bkgnd_overlay">#ffd6d7d7</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="timecode">#000000</color>
+    <color name="timecode_shadow">#aa000000</color>
+
+
+    //added
+    <color name="transparent">#00000000</color>
+    <color name="red">#F44336</color>
+    <color name="gifbg">#070B1F</color>
+
+
+    //Black Colors
+    <color name="black90">#E6000000</color>
+
+    //White Colors
+    <color name="white50">#80FFFFFF</color>
+
+    //Other colors
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="centerInParent" format="boolean">
+    </attr>
+    <attr name="image_height" format="dimension">
+    </attr>
+    <attr name="image_width" format="dimension">
+    </attr>
+    <attr name="push_deleteimage" format="reference">
+    </attr>
+    <attr name="push_image" format="reference">
+    </attr>
+    <attr name="push_image_height" format="dimension">
+    </attr>
+    <attr name="push_image_width" format="dimension">
+    </attr>
+    <attr name="image" format="reference">
+    </attr>
+    <attr name="dividerWidth" format="dimension">
+    </attr>
+    <attr name="top" format="dimension">
+    </attr>
+    <attr name="left" format="dimension">
+    </attr>
+    <attr name="colorForeground" format="color"/>
+
+
+</resources>

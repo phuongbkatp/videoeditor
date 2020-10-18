@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/music_icon"
+            android:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:id="@+id/row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="Audio Name"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:id="@+id/row_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:alpha="50"
+                android:text="Audio Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:id="@+id/row_Size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:alpha="50"
+                android:text="size"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:id="@+id/row_Duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:alpha="50"
+                android:text="Duration"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/music_border_line" />
+</LinearLayout>

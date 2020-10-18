@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain.ActivityMain">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            //--------------Components Area Started---------
+
+
+            //--------------------------------------------Native
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ad_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="50dp"
+                    />
+
+                </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/nativeAdPlaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+
+            //--------------------------------------------NativeAdEnded
+
+            //--------------------------------------------MainButtonsPortion
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="videocutter"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ic_cutter"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_cutter"/>
+
+                    <TextView
+                        android:layout_below="@id/ic_cutter"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Video Cutter"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="videotomp3"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/ic_vid2audio"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_to_audio"/>
+
+                    <TextView
+                        android:layout_below="@id/ic_vid2audio"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Video to Audio"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="videoreverse"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/ic_vidReverse"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_reverse"/>
+
+                    <TextView
+                        android:layout_below="@id/ic_vidReverse"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Video Reverse"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="videorotate"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ic_rotate"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_crop"/>
+
+                    <TextView
+                        android:layout_below="@id/ic_rotate"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Video Rotate"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="videojoin"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/ic_vidJoiner"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_joinner"/>
+
+                    <TextView
+                        android:layout_below="@id/ic_vidJoiner"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Video Joiner"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="videomirror"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/ic_vidmirror"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_mirror"/>
+
+                    <TextView
+                        android:layout_below="@id/ic_vidmirror"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Video Mirror"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="videomute"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ic_mute"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_mute"/>
+
+                    <TextView
+                        android:layout_below="@id/ic_mute"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Video Mute"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="audiovideomixer"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/changeMusic"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_mixer"/>
+
+                    <TextView
+                        android:layout_below="@id/changeMusic"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Audio Changer"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="phototovideo"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/slideshow"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/slideshow_icon"/>
+
+                    <TextView
+                        android:layout_below="@id/slideshow"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Slideshow Maker"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="slowmotion"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/slowMo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/slowmo_icon"/>
+
+                    <TextView
+                        android:layout_below="@id/slowMo"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Slow-Motion"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="fastmotion"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/fastmo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/fastmo_icon"/>
+
+                    <TextView
+                        android:layout_below="@id/fastmo"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Fast-Motion"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="audiojoiner"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/audioJoiner"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/audiojoin"/>
+
+                    <TextView
+                        android:layout_below="@id/audioJoiner"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Audio Joiner"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adLinear"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_id_admob">
+                </com.google.android.gms.ads.AdView>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/samplelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black90"
+        android:clickable="true"
+        android:onClick="DisappearExitDialog"
+        tools:visibility="visible"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradientsplash"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/textExit"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Want to Exit?"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewtwo"
+                android:layout_width="match_parent"
+                android:layout_below="@id/textExit"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white50" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnview"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/nativeAdPlaceHolderTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/exit_now">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:background="@color/white50" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/exit_now"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tcb"
+                    android:gravity="center"
+                    android:text="@string/press_again_to_exit"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

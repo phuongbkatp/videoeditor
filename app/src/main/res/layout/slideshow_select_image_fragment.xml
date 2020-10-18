@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/A11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gradientbtn">
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:id="@+id/A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Make Stunning Slideshows"
+                android:textColor="@color/color_white_color"
+                android:textSize="25dp" />
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:id="@+id/A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/A1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="With"
+                android:textColor="@color/color_white_color"
+                android:textSize="22dp" />
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/A2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Slideshow Maker"
+                android:textColor="@color/color_white_color"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/A12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/A11"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.video_editor.pro.UtilsAndAdapters.EditorMetaFont
+                android:id="@+id/Text"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/gradientbtn"
+                android:gravity="center"
+                android:text="Start"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
